@@ -1,10 +1,9 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"strings"
-
-	"log"
 
 	"github.com/gin-gonic/gin"
 
@@ -20,7 +19,13 @@ func main() {
 		log.Fatal(err)
 	}
 
-	repository := mongodb.NewMongoRepository(cfg.Mongo.URI, cfg.Mongo.DB, cfg.Mongo.Collection)
+	client, err := mongodb.NewMongoClient(cfg.Mongo.URI)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	repository := mongodb.NewMongoRepository(cfg.Mongo.DB, cfg.Mongo.Collection, client)
 
 	storage.SetStorage(repository)
 
@@ -28,7 +33,8 @@ func main() {
 
 	router.LoadHTMLFiles("./static/index.html")
 
-	router.GET("/redirect/:code", Redirect)
+	router.GET("/go/:code", Redirect)
+	router.GET("/info", Info)
 	router.GET("/shortener", Get)
 	router.POST("/shortener", Post)
 
@@ -42,6 +48,10 @@ func Get(c *gin.Context) {
 func Post(c *gin.Context) {
 	url := c.PostForm("url")
 
+	if !strings.Contains(url, "http") {
+		url = "http://" + url
+	}
+
 	code, err := storage.SaveUrl(url)
 
 	if err != nil {
@@ -51,14 +61,12 @@ func Post(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "index.html", gin.H{
-		"shortUrl": "http://localhost:8080/redirect/" + code,
+		"shortUrl": code,
 	})
 }
 
 func Redirect(c *gin.Context) {
 	code := c.Param("code")
-
-	log.Println(code)
 
 	url, err := storage.GetURL(code)
 
@@ -69,11 +77,18 @@ func Redirect(c *gin.Context) {
 		return
 	}
 
-	if !strings.Contains(url, "http") {
-		url = "http://" + url
+	http.Redirect(c.Writer, c.Request, url, http.StatusMovedPermanently)
+}
+
+func Info(c *gin.Context) {
+	info, err := storage.GetInfo()
+
+	if err != nil {
+		log.Println("ERROR", err)
+		c.Writer.WriteHeader(http.StatusNotFound)
+		c.Writer.Write([]byte("URL Not Found"))
+		return
 	}
 
-	log.Println(url)
-
-	http.Redirect(c.Writer, c.Request, url, http.StatusMovedPermanently)
+	c.JSON(http.StatusOK, info)
 }

@@ -6,6 +6,8 @@ services:
     restart: always
     ports:
       - 27017:27017
+    volumes:
+      - ./storage/data:/data/db
 
   shortener:
     container_name: shortener

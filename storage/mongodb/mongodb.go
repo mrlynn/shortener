@@ -15,13 +15,13 @@ import (
 )
 
 type Repository struct {
-	Uri        string
 	DB         string
 	Collection string
+	Client     *mongo.Client
 }
 
-func NewMongoRepository(uri, db, collection string) *Repository {
-	return &Repository{Uri: uri, DB: db, Collection: collection}
+func NewMongoRepository(db, collection string, client *mongo.Client) *Repository {
+	return &Repository{DB: db, Collection: collection, Client: client}
 }
 
 func NewMongoClient(uri string) (*mongo.Client, error) {
@@ -40,13 +40,7 @@ func NewMongoClient(uri string) (*mongo.Client, error) {
 }
 
 func (r Repository) SaveUrl(url string) (string, error) {
-	client, err := NewMongoClient(r.Uri)
-
-	if err != nil {
-		return "", err
-	}
-
-	collection := client.Database(r.DB).Collection(r.Collection)
+	collection := r.Client.Database(r.DB).Collection(r.Collection)
 
 	id, err := collection.EstimatedDocumentCount(context.TODO())
 
@@ -70,12 +64,6 @@ func (r Repository) SaveUrl(url string) (string, error) {
 }
 
 func (r Repository) GetURL(code string) (string, error) {
-	client, err := NewMongoClient(r.Uri)
-
-	if err != nil {
-		return "", err
-	}
-
 	filter := bson.D{{"generatedurl", code}}
 
 	update := bson.D{
@@ -89,9 +77,31 @@ func (r Repository) GetURL(code string) (string, error) {
 
 	var shortener models.Shortener
 
-	if err := client.Database(r.DB).Collection(r.Collection).FindOneAndUpdate(context.TODO(), filter, update).Decode(&shortener); err != nil {
+	if err := r.Client.Database(r.DB).Collection(r.Collection).FindOneAndUpdate(context.TODO(), filter, update).Decode(&shortener); err != nil {
 		return "", err
 	}
 
 	return shortener.OriginalURL, nil
+}
+
+func (r Repository) GetInfo() ([]models.Shortener, error) {
+	cursor, err := r.Client.Database(r.DB).Collection(r.Collection).Find(context.TODO(), bson.D{})
+
+	if err != nil {
+		return nil, err
+	}
+
+	var shorteners []models.Shortener
+
+	for cursor.Next(context.TODO()) {
+		var shortener models.Shortener
+
+		if err = cursor.Decode(&shortener); err != nil {
+			return nil, err
+		}
+
+		shorteners = append(shorteners, shortener)
+	}
+
+	return shorteners, nil
 }
