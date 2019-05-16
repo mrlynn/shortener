@@ -52,7 +52,7 @@ func Post(c *gin.Context) {
 		url = "http://" + url
 	}
 
-	code, err := storage.SaveUrl(url)
+	genUrl, err := storage.SaveUrl(url)
 
 	if err != nil {
 		log.Printf("ERROR: %v\n", err)
@@ -61,7 +61,7 @@ func Post(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "index.html", gin.H{
-		"shortUrl": code,
+		"shortUrl": genUrl,
 	})
 }
 

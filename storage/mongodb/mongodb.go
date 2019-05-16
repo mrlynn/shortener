@@ -2,6 +2,7 @@ package mongodb
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"time"
 
@@ -50,7 +51,9 @@ func (r Repository) SaveUrl(url string) (string, error) {
 
 	id++
 
-	genUrl := encoder.Encode(id)
+	encoded := encoder.Encode(id)
+
+	genUrl := fmt.Sprintf("http://localhost:8080/go/%s", encoded)
 
 	insertResult, err := collection.InsertOne(context.TODO(), models.Shortener{ID: id, OriginalURL: url, GeneratedURL: genUrl, Visited: false, Count: 0})
 
@@ -64,7 +67,8 @@ func (r Repository) SaveUrl(url string) (string, error) {
 }
 
 func (r Repository) GetURL(code string) (string, error) {
-	filter := bson.D{{"generatedurl", code}}
+	genUrl := fmt.Sprintf("http://localhost:8080/go/%s", code)
+	filter := bson.D{{"generatedurl", genUrl}}
 
 	update := bson.D{
 		{"$inc", bson.D{
