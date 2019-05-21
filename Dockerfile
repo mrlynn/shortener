@@ -1,7 +1,6 @@
 FROM golang:1.12-alpine3.9 AS builder
 WORKDIR src/github.com/Dimitriy14/shortener
 COPY . .
-RUN go get -d -v ./...
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/shortener .
 
 FROM alpine:3.7

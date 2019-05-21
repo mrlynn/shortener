@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/asaskevich/govalidator"
 	"github.com/gin-gonic/gin"
 
 	"github.com/Dimitriy14/shortener/config"
@@ -48,6 +49,12 @@ func Get(c *gin.Context) {
 func Post(c *gin.Context) {
 	url := c.PostForm("url")
 
+	if !govalidator.IsURL(url) {
+		c.Writer.Write([]byte("URL is not valid"))
+		c.Writer.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
 	if !strings.Contains(url, "http") {
 		url = "http://" + url
 	}
@@ -67,7 +74,7 @@ func Post(c *gin.Context) {
 
 func Redirect(c *gin.Context) {
 	code := c.Param("code")
-
+	log.Println(code)
 	url, err := storage.GetURL(code)
 
 	if err != nil {

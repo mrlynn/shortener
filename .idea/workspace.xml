@@ -3,8 +3,56 @@
   <component name="ChangeListManager">
     <list default="true" id="3aff20b4-89d9-48c9-9c44-16d564d635c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/mongodb/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/mongodb/mongodb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/storage.go" beforeDir="false" afterPath="$PROJECT_DIR$/storage/storage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/urlSaver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/urlSaver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/color/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/color/color.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/log/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/log/color.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/log/log.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/labstack/gommon/log/white.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/colorable_appengine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/colorable_others.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/colorable_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-colorable/noncolorable.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/bytebuffer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/bytebufferpool/pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/template.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/unsafe.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/valyala/fasttemplate/unsafe_gae.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/bson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/decimal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/bson/json.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/extension.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/fold.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/indent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/scanner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/stream.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/mgo.v2/internal/json/tags.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,10 +77,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="321">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+              <folding>
+                <element signature="e#14#220#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encoder/encoder.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -49,27 +100,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encoder/encoder_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="210">
               <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="e#17#72#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/urlSaver_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="360">
+              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../highload/creator/creator.go">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -84,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="30">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -105,17 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/storage.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/storage/mongodb/mongodb.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -140,18 +174,18 @@
         <option value="$PROJECT_DIR$/models/models.go" />
         <option value="$PROJECT_DIR$/encoder/encoder.go" />
         <option value="$PROJECT_DIR$/config/config.go" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/config/config.json" />
         <option value="$PROJECT_DIR$/static/index.html" />
-        <option value="$PROJECT_DIR$/storage/storage.go" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/test.txt" />
         <option value="$PROJECT_DIR$/test/urlSaver.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/test/urlSaver_test.go" />
         <option value="$PROJECT_DIR$/encoder/encoder_test.go" />
         <option value="$PROJECT_DIR$/storage/mongodb/mongodb.go" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/storage/storage.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/test/urlSaver_test.go" />
       </list>
     </option>
   </component>
@@ -172,16 +206,6 @@
             <path>
               <item name="shortener" type="b2602c69:ProjectViewProjectNode" />
               <item name="shortener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shortener" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shortener" type="462c0819:PsiDirectoryNode" />
-              <item name="encoder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shortener" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shortener" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shortener" type="b2602c69:ProjectViewProjectNode" />
@@ -219,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestSaving in github.com/Dimitriy14/shortener/test">
+  <component name="RunManager" selected="Go Test.TestValidation in github.com/Dimitriy14/shortener/test">
     <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="shortener" />
       <working_directory value="$PROJECT_DIR$/encoder" />
@@ -242,50 +266,61 @@
       <pattern value="^TestSaving$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="shortener" />
+      <working_directory value="$PROJECT_DIR$/test" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Dimitriy14/shortener/test" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestValidation$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestValidation in github.com/Dimitriy14/shortener/test" />
         <item itemvalue="Go Test.TestSaving in github.com/Dimitriy14/shortener/test" />
         <item itemvalue="Go Test.TestEncode in github.com/Dimitriy14/shortener/encoder" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 40m 38s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 06s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 11s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 13s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 16s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 19s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 20s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 23s.xml">
-      <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestEncode_in_github_com_Dimitriy14_shortener_encoder - 2019.05.16 at 16h 43m 51s.xml">
       <configuration name="TestEncode in github.com/Dimitriy14/shortener/encoder" configurationId="GoTestRunConfiguration" />
     </history-entry>
     <history-entry file="TestSaving_in_github_com_Dimitriy14_shortener_test - 2019.05.16 at 16h 51m 41s.xml">
       <configuration name="TestSaving in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 11m 15s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 11m 56s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 13m 07s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 15m 06s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 15m 28s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 20m 19s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 20m 26s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestValidation_in_github_com_Dimitriy14_shortener_test - 2019.05.20 at 17h 20m 33s.xml">
+      <configuration name="TestValidation in github.com/Dimitriy14/shortener/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -298,7 +333,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4039604" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -402,16 +437,6 @@
     <entry file="file://$PROJECT_DIR$/../maxconn/main.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/urls.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -422,17 +447,24 @@
     <entry file="file://$PROJECT_DIR$/../highload/creator/creator.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/mongodb/mongodb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -446,48 +478,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/storage.go">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12.4/libexec/src/net/url/url.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="478" column="5" selection-start-line="478" selection-start-column="5" selection-end-line="478" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/storage.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/encoder/encoder.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/encoder/encoder_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="210">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#17#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="321">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#220#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/urlSaver_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/mongodb/mongodb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>

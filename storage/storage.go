@@ -8,20 +8,22 @@ type Storage interface {
 	GetInfo() ([]models.Shortener, error)
 }
 
-var storage Storage
+var (
+	repository Storage
+)
 
 func SetStorage(s Storage) {
-	storage = s
+	repository = s
 }
 
 func SaveUrl(url string) (string, error) {
-	return storage.SaveUrl(url)
+	return repository.SaveUrl(url)
 }
 
 func GetURL(code string) (string, error) {
-	return storage.GetURL(code)
+	return repository.GetURL(code)
 }
 
 func GetInfo() ([]models.Shortener, error) {
-	return storage.GetInfo()
+	return repository.GetInfo()
 }
