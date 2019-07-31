@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 	"strings"
 
 	"github.com/asaskevich/govalidator"
@@ -38,8 +39,11 @@ func main() {
 	router.GET("/info", Info)
 	router.GET("/shortener", Get)
 	router.POST("/shortener", Post)
-
-	router.Run(cfg.Server.Host + ":" + cfg.Server.Port)
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+	router.Run(cfg.Server.Host + ":" + port)
 }
 
 func Get(c *gin.Context) {
