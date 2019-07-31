@@ -1,6 +1,6 @@
 package storage
 
-import "github.com/Dimitriy14/shortener/models"
+import "github.com/mrlynn/shortener/models"
 
 type Storage interface {
 	GetURL(code string) (string, error)

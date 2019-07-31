@@ -8,9 +8,9 @@ import (
 	"github.com/asaskevich/govalidator"
 	"github.com/gin-gonic/gin"
 
-	"github.com/Dimitriy14/shortener/config"
-	"github.com/Dimitriy14/shortener/storage"
-	"github.com/Dimitriy14/shortener/storage/mongodb"
+	"github.com/mrlynn/shortener/config"
+	"github.com/mrlynn/shortener/storage"
+	"github.com/mrlynn/shortener/storage/mongodb"
 )
 
 func main() {

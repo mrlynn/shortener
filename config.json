@@ -5,8 +5,12 @@
   },
 
   "mongo": {
-    "uri": "mongodb://localhost:27017",
+    "uri": "mongodb+srv://mike:Password123@gophercon-zbcul.mongodb.net/test?retryWrites=true&w=majority",
     "db": "urlinfo",
     "collection": "urls"
+  },
+
+  "static": {
+    "title": "MongoDB URL Shortener"
   }
 }

@@ -11,8 +11,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/Dimitriy14/shortener/encoder"
-	"github.com/Dimitriy14/shortener/models"
+	"github.com/mrlynn/shortener/encoder"
+	"github.com/mrlynn/shortener/models"
 )
 
 type Repository struct {
