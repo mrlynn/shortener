@@ -1,3 +1,7 @@
+// Package test provides testing coverage for the web interface of this
+// example package. This package depends upon, and uses the net/http package
+// to facilitate a web-based interaction with the shortener to test its
+// functionality.
 package test
 
 import (
@@ -13,6 +17,8 @@ import (
 	fuzz "github.com/google/gofuzz"
 )
 
+// TestSaving is a function that drives a web interaction to test the shortener. It
+// uses a text file "urls.txt" that contains a list of urls to be incorporated in the test.
 func TestSaving(t *testing.T) {
 	file, err := os.Open("urls.txt")
 
@@ -33,6 +39,7 @@ func TestSaving(t *testing.T) {
 	}
 }
 
+// TestValidation is a function that tests the correctness of the shortener.
 func TestValidation(t *testing.T) {
 	f := fuzz.New()
 

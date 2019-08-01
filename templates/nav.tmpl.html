@@ -5,28 +5,90 @@
         <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
       </li>
       <li>
-        <a href="https://www.mongodb.com/blog/post/mongodb-go-driver-tutorial"><span class="glyphicon glyphicon-user"></span> MongoDB Go Driver Tutorial</a>
+        <a href="https://www.mongodb.com/blog/post/mongodb-go-driver-tutorial"
+          ><span class="glyphicon glyphicon-user"></span> MongoDB Go Driver
+          Tutorial</a
+        >
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
+        <a
+          href="#"
+          class="dropdown-toggle"
+          data-toggle="dropdown"
+          role="button"
+          aria-expanded="false"
+          ><span class="glyphicon glyphicon-info-sign"></span> Getting Started
+          Guides <span class="caret"></span
+        ></a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            Something linked here.
+          </li>
+          <li>
+              Something linked here.
+
+          </li>
+          <li>
+              Something linked here.
+
+          </li>
+          
+        </ul>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://docs.mongodb.com"><span class="glyphicon glyphicon-book"></span> MongoDB Documentation</a>
+    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+      <li class="nav-item order-2 order-md-1">
+        <a href="#" class="nav-link" title="settings"
+          ><i class="fa fa-cog fa-fw fa-lg"></i
+        ></a>
+      </li>
+      <li class="dropdown order-1">
+        <button
+          type="button"
+          id="dropdownMenu1"
+          data-toggle="dropdown"
+          class="btn btn-outline-secondary dropdown-toggle"
+        >
+          Login <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right mt-2">
+          <li class="px-3 py-2">
+            <form class="form" role="form" action="/login" METHOD="POST">
+              <div class="form-group">
+                <input
+                  id="emailInput"
+                  placeholder="Email"
+                  class="form-control form-control-sm"
+                  type="text"
+                  required=""
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  id="passwordInput"
+                  placeholder="Password"
+                  class="form-control form-control-sm"
+                  type="text"
+                  required=""
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Login
+                </button>
+              </div>
+              <div class="form-group text-center">
+                <small
+                  ><a href="/forgot" data-toggle="modal" data-target="#modalPassword"
+                    >Forgot password?</a
+                  ></small
+                >
+              </div>
+            </form>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>

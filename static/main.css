@@ -15,7 +15,7 @@
       margin-top: -20px; }
     .jumbotron .lang-logo {
       display: block;
-      background: #12924F;
+      background: #21313C;
       border-radius: 50%;
       overflow: hidden;
       width: 100px;
@@ -24,4 +24,10 @@
       border: 2px solid white; }
       .jumbotron .lang-logo img {
         max-width: 100%; }
-  
+        button:focus {
+            outline: 0;
+        }
+        
+        .navbar .dropdown-menu .form-control {
+            width: 200px;
+        }
