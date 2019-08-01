@@ -1,3 +1,7 @@
+// Package encoder is a package that is primarily responsible for encoding a string url
+// which is passed to it from SaveUrl. In this case, encoding is the process of
+// taking a normal, human readable url such as http://google.com and converting
+// it into a smaller, more easily transported, typed, and/or remembered url.
 package encoder
 
 const (

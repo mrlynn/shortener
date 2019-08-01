@@ -1,3 +1,6 @@
+// Package mongodb is an example MongoDB client implementation written in Go
+// This package extends a Repository metaphor which wraps access methods for
+// the MongoDB database and collections that are used in the example.
 package mongodb
 
 import (
@@ -15,16 +18,22 @@ import (
 	"github.com/mrlynn/shortener/models"
 )
 
+// Repository is a struct used to store details of your MongoDB Database,
+// Collection and a pointer to a MongoDB Client object
 type Repository struct {
 	DB         string
 	Collection string
 	Client     *mongo.Client
 }
 
+// NewMongoRepository takes a Database, a Collection name,
+// a pointer to a MongoDB Client object and returns a pointer to a Repository
 func NewMongoRepository(db, collection string, client *mongo.Client) *Repository {
 	return &Repository{DB: db, Collection: collection, Client: client}
 }
 
+// NewMongoClient takes a single parameter uri and returns either an nil, and error,
+// or a newly created MongoDB Client object
 func NewMongoClient(uri string) (*mongo.Client, error) {
 	client, err := mongo.NewClient(options.Client().ApplyURI(uri))
 
@@ -40,6 +49,11 @@ func NewMongoClient(uri string) (*mongo.Client, error) {
 	return client, nil
 }
 
+// SaveUrl is a function that has one receiver of type Repository,
+// takes a single url string parameter and generates a shortened url,
+// returning that after it is saved in the database.
+// A call to SaveUrl will result in a document to be created which contains
+// the details of a new generated url.
 func (r Repository) SaveUrl(url string) (string, error) {
 	collection := r.Client.Database(r.DB).Collection(r.Collection)
 
@@ -66,6 +80,11 @@ func (r Repository) SaveUrl(url string) (string, error) {
 	return genUrl, nil
 }
 
+// GetURL is a function that has one receiver of type Repository, accepts
+// a single parameter of type string that is an encoded URL and returns
+// details from the encoded URL. A call to this function results in an
+// update of the document stored in the database such that the visit count
+// is incremented by one.
 func (r Repository) GetURL(code string) (string, error) {
 	genUrl := fmt.Sprintf("http://localhost:8080/go/%s", code)
 	filter := bson.D{{"generatedurl", genUrl}}
