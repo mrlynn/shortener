@@ -31,9 +31,14 @@ func main() {
 
 	storage.SetStorage(repository)
 
-	router := gin.Default()
+	router := gin.New()
+	router.Use(gin.Logger())
+	router.LoadHTMLGlob("templates/*.tmpl.html")
+	router.Static("/static", "static")
 
-	router.LoadHTMLFiles("./static/index.html")
+	router.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.tmpl.html", nil)
+	})
 
 	router.GET("/go/:code", Redirect)
 	router.GET("/info", Info)
@@ -43,11 +48,12 @@ func main() {
 	if port == "" {
 		log.Fatal("$PORT must be set")
 	}
-	router.Run(cfg.Server.Host + ":" + port)
+	router.Run(":" + port)
+
 }
 
 func Get(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", nil)
+	c.HTML(http.StatusOK, "index.tmpl.html", nil)
 }
 
 func Post(c *gin.Context) {
@@ -71,7 +77,7 @@ func Post(c *gin.Context) {
 		return
 	}
 
-	c.HTML(http.StatusOK, "index.html", gin.H{
+	c.HTML(http.StatusOK, "index.tmpl.html", gin.H{
 		"shortUrl": genUrl,
 	})
 }
